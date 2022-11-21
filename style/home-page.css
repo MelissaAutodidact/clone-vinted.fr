@@ -36,7 +36,7 @@ body {
     overflow-y: scroll;
     min-height: 100%;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.25;
 }
 
@@ -108,6 +108,7 @@ header {
 }
 
 .l-header_main {
+    
     padding-top: 4px;
     padding-bottom: 4px;
 }
@@ -117,8 +118,6 @@ header {
     align-items: center;
     width: 100%;
 }
-
-
 
 
 .l-header_logo {
@@ -131,6 +130,7 @@ header {
     width: 100px;
 }
 
+
 .l-header_search {
 
     display: flex;
@@ -139,15 +139,19 @@ header {
     
     justify-content: space-between;
 
-    width: 400px;
+    width: 300px;
 
-    padding: 0.10rem;
+    padding: 0.20rem;
 
     border-radius: 0.2rem;
 
     color: rgb(153, 153, 153);
 
     background-color: var(--color-search-box);
+
+    position: relative;
+    left: 50px;
+
 }
 
 input {
@@ -163,18 +167,43 @@ input {
 
 .icon-search {
 
-    position: relative;
+position: relative;
     
-    left: 10px;
+left: 10px;
     
-    }
+}
     
       
     
-    .icon-close {
+.icon-close {
     
+position: relative;
+    
+right: 10px;
+    
+}
+
+.u-desktops-only{
     position: relative;
+    left: 90px;
+}
+
+.login-account {
+    position: relative;
+    right: 20px;
+
+    border: 1px solid#037682;
+    padding: 4px;
+}
+
+.sell-on-vinted {
+    border:1px solid#017682;
+    background-color: #017682;
+    padding: 4px;
+    color: white;
+}
     
-    right: 10px;
-    
-    }
+.help {
+    position: relative;
+    left: 20px;
+}
