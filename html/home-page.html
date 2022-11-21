@@ -1,96 +1,179 @@
 <!DOCTYPE html>
 
+<!--
+
+
+             /$$    /$$ /$$             /$$                     /$$
+            | $$   | $$|__/            | $$                    | $$
+            | $$   | $$ /$$ /$$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$$
+            |  $$ / $$/| $$| $$__  $$|_  $$_/   /$$__  $$ /$$__  $$
+             \  $$ $$/ | $$| $$  \ $$  | $$    | $$$$$$$$| $$  | $$
+              \  $$$/  | $$| $$  | $$  | $$ /$$| $$_____/| $$  | $$
+               \  $/   | $$| $$  | $$  |  $$$$/|  $$$$$$$|  $$$$$$$
+                \_/    |__/|__/  |__/   \___/   \_______/ \_______/
+
+-->
+
 <html lang="fr">
 
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vinted | Achète, vends ou échange les vêtements, chaussures ...</title>
+
+    <meta name="compagny" content="vinted">
+    <meta name="keywords" content="mode entre amis, troc de vêtements, vente de vêtements">
     <meta name="description" content="Rejoins la communauté de mode de seconde main qui compte plus de 65 millions de membres. Donne une seconde vie à tes vêtements préférés et gagne de l'argent ...">
     <meta name="author" content="Melissa B. Amort">
 
-    <title>Vinted | Achète, vends ou échange les vêtements, chaussures ...</title>
-    <link rel="icon" href="/asset/favicon-vinted.png">
+    <link hreflang="es-es" href="https://www.vinted.es/" rel="alternate">
+    <link hreflang="fr-be" href="https://www.vinted.be/" rel="alternate">
+    <link hreflang="fr-lu" href="https://www.vinted.lu/" rel="alternate">
+    <link hreflang="nl-nl" href="https://www.vinted.nl/" rel="alternate">
+    <link hreflang="lt-lt" href="https://www.vinted.lt/" rel="alternate">
+    <link hreflang="de-de" href="https://www.vinted.de/" rel="alternate">
+    <link hreflang="de-at" href="https://www.vinted.at/" rel="alternate">
+    <link hreflang="it-it" href="https://www.vinted.it/" rel="alternate">
+    <link hreflang="en-gb" href="https://www.vinted.co.uk/" rel="alternate">
+    <link hreflang="pt-pt" href="https://www.vinted.pt/" rel="alternate">
+    <link hreflang="en-us" href="https://www.vinted.com/" rel="alternate">
+    <link hreflang="cs-cz" href="https://www.vinted.cz/" rel="alternate">
+    <link hreflang="sk-sk" href="https://www.vinted.sk/" rel="alternate">
+    <link hreflang="pl-pl" href="https://www.vinted.pl/" rel="alternate">
+    <link hreflang="sv-se" href="https://www.vinted.se/" rel="alternate">
+    <link hreflang="hu-hu" href="https://www.vinted.hu/" rel="alternate">
+    <link hreflang="es-es" href="https://www.vinted.fr/" rel="alternate">
+    <!-- SEO HTML | Google -->
 
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
+    <!-- SEO | Ergonomie Mobile-->
+
+    <meta name="twitter:app:country" content="FR">
+    <meta name="twitter:app:name:iphone" content="Vinted">
+    <meta name="twitter:app:id:iphone" content="632064380">
+    <meta name="twitter:app:name:googleplay" content="Vinted">
+    <meta name="twitter:app:id:googleplay" content="fr.vinted">
+    <meta name="twitter:app:url:iphone" content="vintedfr://home?portal=fr">
+    <link rel="alternative" href="android-app://fr.vinted/vintedfr/home">
+    <meta name="twitter:site" content="@vinted">
+    <meta property="og:site_name" content="Vinted">
+    <meta property="og:image" content="https://static.vinted.com/assets/open-graph/fr-01b27e7de6932c643309aad67ced9adeee71fe79442047ee1a2123d83fbbddf2.jpg">
+    <meta property="fb:app_id" content="502159173164171">
+    <meta property="og:url" content="https://www.vinted.fr/">
+    <link rel="canonical" href="https://www.vinted.fr/">
+    <meta name="csrf-param" content="authenticity_token">
+    <!-- Meta Org Social Media -->
+
+    <link rel="icon" href="/asset/favicon-vinted.png">
     <link rel="stylesheet" href="/style/home-page.css">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
 </head>
 
+    <body>
+        
+        <div class="l-header">
 
-<body>
-    <div id="home-page" class="site">
+            <header class="l-header_main">
 
-        <header>
-            <div class="header-top">
+                <div class="l-header_content">
 
-                <div class="container">
+                    <div class="l-header_logo">
+                        <img src="/asset/logo-vinted.png" alt="logo-vinted">
+                    </div>
 
-                    <div class="wrapper flexitem">
+                    <div class="l-header_search">
+                        <span class="icon-search"><i class="ri-search-line"></i></span>
+                        <input type="text" placeholder="Rechercher des articles...">
+                        <span class="icon-close"><i class="ri-close-line"></i></span>
+                    </div>
 
-                        <div class="left">
-
-                            <div class="logo">
-                                    <img src="/asset/logo-vinted.png" alt="logo-vinted">
-                            </div>
-                                    
-                            <div class="search-box">
-
-                                    <span class="icon-search"><i class="ri-search-line"></i></span>
-                                    <input type="text" placeholder="Rechercher des articles...">
-                                    <span class="icon-close"><i class="ri-close-line"></i></span>
-
-                            </div>
-
+                    <div class="l-header_actions">
+                        <div class="u-desktops-only">
+                            <a role="button" href="/member/signup?ref_url=%2F"> 
+                                <span class="button-content">
+                                    S'inscrire | Se connecter 
+                                </span>
+                            </a>
+                            <a role="button" href="https://www.vinted.fr/member/signup/select_type?ref_url=%2Fitems%2Fnew">
+                                <span>
+                                Vends tes articles 
+                                </span>
+                            </a>
+                            <a href="https://www.vinted.fr/help/360?access_channel=vinted_guide">
+                                <span>
+                                    <i class="ri-question-line"></i>
+                                </span>
+                            </a>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="right">
-                            <ul class="flexitem">
-                                <li class="main-links">
+                <div class="l-header_navigation">
+                    <div class="u-desktops-only">
+                        <div class="container">
+                            <div class="content-width">
+                                <div class="web-tabs">
+                                    <ul class="tabs_content" role="tablist">
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/femmes">Femmes</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/hommes">Hommes</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/enfants">Enfants</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/maison">Maison</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/divertissement">Divertissement</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/animaux">Animaux</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/about">À propos</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tabs-title">
+                                            <a class="nav-links" href="https://www.vinted.fr/our-platform">Notre plateforme</a>
+                                            </span>
+                                        </li>
 
-                                        <li id="login-account"><a href="#"> S'inscrire | Se connecter </a></li>
-                                        <li id="sell-item"><a href="#"> Vends tes articles </a></li>
-                                        
-                                </li>
+                                    </ul>
 
-                                    <li><a href="#">EN <span class="icon-arrow"><i class="ri-arrow-down-s-line"></i></span></a>
-                                        <ul>
-                                            <li class="current"><a href="#"> Français</a></li>
-                                            <li><a href="#"> English </a></li>
-                                            <li><a href="#"> Espanol </a></li>
-                                            <li><a href="#"> Nerlands </a></li> 
-                                        </ul>
-                                    </li>
+                                </div>
 
-                            </ul>
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div> 
+                </div>
 
-            </div> 
-            <!-- Herder top-->
-
-        </header>
-        <!-- Header -->
-
-        <main></main>
-        <!-- Main -->
-
-        <footer></footer>
-        <!--footer-->
-
-    </div>
-
-
-
-</body>
-
-
-
-
+            </header>
+        </div>
+                                 
+    </body>
 
 </html>
