@@ -47,9 +47,7 @@ html, button, textarea {
 
 @media only screen and (min-width: 721px) and (max-width: 959px), only screen and (max-width: 720px) {
     body {
-        min-width: 240px !important;
-        max-width: 100% !important;
-        width: 100% !important;
+       
     }
     
     }
@@ -120,90 +118,100 @@ header {
 }
 
 
-.l-header_logo {
-    height: 44px;
-    display: flex;
-    align-items: center;
-}
 
-.l-header_logo img {
-    width: 100px;
-}
+@media screen and (max-width: 720px) {
 
+    .l-header_content {
+        display: flex;
+        padding: 0 10px 0 10px;
+    }
 
-.l-header_search {
-
-    display: flex;
-
-    align-items: center;
+    .l-header_logo {
+        height: 44px;
+        display: flex;
+        align-items: center;
+    }
     
-    justify-content: space-between;
+    .l-header_logo img {
+        width: 100px;
+    }
+    
+    
+    .l-header_search {
+    
+        display: flex;
+    
+        align-items: center;
+        
+        justify-content: space-between;
+    
+        width: 205px;
+    
+        padding: 0.20rem;
+    
+        border-radius: 0.2rem;
+    
+        color: rgb(153, 153, 153);
+    
+        background-color: var(--color-search-box);
+    
+        position: relative;
+        left: 30px;
 
-    width: 300px;
-
-    padding: 0.20rem;
-
-    border-radius: 0.2rem;
-
-    color: rgb(153, 153, 153);
-
-    background-color: var(--color-search-box);
-
+        padding: 6px;
+        
+    }
+    
+    input {
+        margin: 0 0rem 0 0.4rem;
+    
+        width: 100%;
+        border: none;
+    
+        outline: none;
+    
+        background-color: var(--color-search-box);
+    }
+    
+    .icon-search {
+    
     position: relative;
-    left: 50px;
-
-}
-
-input {
-    margin: 0 0.9rem 0 0.9rem;
-
-    width: 100%;
-    border: none;
-
-    outline: none;
-
-    background-color: var(--color-search-box);
-}
-
-.icon-search {
-
-position: relative;
-    
-left: 10px;
-    
-}
-    
-      
-    
-.icon-close {
-    
-position: relative;
-    
-right: 10px;
-    
-}
-
-.u-desktops-only{
+        
+    left: 2px;
+        
+    }
+     
+        
+    .icon-close {
+        
     position: relative;
-    left: 90px;
-}
-
-.login-account {
-    position: relative;
-    right: 20px;
-
-    border: 1px solid#037682;
-    padding: 4px;
-}
-
-.sell-on-vinted {
-    border:1px solid#017682;
-    background-color: #017682;
-    padding: 4px;
-    color: white;
-}
+        
+    right: 2px;
+        
+    }
     
-.help {
-    position: relative;
-    left: 20px;
+    .u-desktops-only{
+        position: relative;
+        left: 90px;
+    }
+    
+    .login-account {
+        position: relative;
+        right: 20px;
+    
+        border: 1px solid#037682;
+        padding: 4px;
+    }
+    
+    .sell-on-vinted {
+        border:1px solid#017682;
+        background-color: #017682;
+        padding: 4px;
+        color: white;
+    }
+        
+    .help {
+        visibility: hidden;
+    }
+    
 }
