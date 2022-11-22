@@ -1,0 +1,23 @@
+{
+  "name": "vinted-fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./style/home-page.css -o ./dist/home-page.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelissaBamort/clone-vinted.fr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelissaBamort/clone-vinted.fr/issues"
+  },
+  "homepage": "https://github.com/MelissaBamort/clone-vinted.fr#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

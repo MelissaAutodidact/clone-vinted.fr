@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Tailwin directives */
+
 :root {
     --primary-color: #017682;
     --secondary-color: #ababab;
@@ -25,8 +30,9 @@
     --trans-background-color: background-color .3s color .3s;
     --trans-background: background-color .3s;
     --trans-color: color .3s:
-
 }
+/* Root css */
+
 
 body {
     margin: 0;
@@ -44,174 +50,43 @@ html, button, textarea {
     font-family: "Maison Neue", "Helvetica Neue", "Helvetica-Neue", "Arial";
     color: var(--secondary-color);
 }
-
-@media only screen and (min-width: 721px) and (max-width: 959px), only screen and (max-width: 720px) {
-    body {
-       
-    }
-    
-    }
- 
-a {
-    
-    text-decoration: none;
-    
-    color: inherit;
-    
-}
-      
-ul {
-    
-    list-style: none;
-    
-}
-       
-img {
-    
-    max-width: var(--percent100);
-    
-    vertical-align: middle;
-    
-}
-
-.l-header_content {
-
-    display: flex;
-    
-    align-items: center;
-    
-    width: 100%;
-
-}
-
-div {
-
-    display: block;
-
-}
-
-
-/*----------------
-$     Header
-*----------------*/
-
-header {
-    display: block;
-}
-
-.l-header  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.l-header_main {
-    
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.l-header_content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
+/* Configuration de balise HTML */
 
 
 
-@media screen and (max-width: 720px) {
+/* -----------------
+ *   Mobile First
+ *-----------------*/
+@media screen and (min-width: 0px) and (max-width: 375px){
 
-    .l-header_content {
-        display: flex;
-        padding: 0 10px 0 10px;
+    header {
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
     }
 
-    .l-header_logo {
-        height: 44px;
-        display: flex;
-        align-items: center;
-    }
-    
     .l-header_logo img {
+        display: flex;
         width: 100px;
     }
-    
-    
-    .l-header_search {
-    
-        display: flex;
-    
-        align-items: center;
-        
-        justify-content: space-between;
-    
-        width: 205px;
-    
-        padding: 0.20rem;
-    
-        border-radius: 0.2rem;
-    
-        color: rgb(153, 153, 153);
-    
-        background-color: var(--color-search-box);
-    
-        position: relative;
-        left: 30px;
 
-        padding: 6px;
-        
+    .ri-menu-line {
+        color: blue;
+        float: right;
     }
-    
-    input {
-        margin: 0 0rem 0 0.4rem;
-    
-        width: 100%;
-        border: none;
-    
-        outline: none;
-    
-        background-color: var(--color-search-box);
-    }
-    
-    .icon-search {
-    
-    position: relative;
-        
-    left: 2px;
-        
-    }
-     
-        
-    .icon-close {
-        
-    position: relative;
-        
-    right: 2px;
-        
-    }
-    
-    .u-desktops-only{
-        position: relative;
-        left: 90px;
-    }
-    
-    .login-account {
-        position: relative;
-        right: 20px;
-    
-        border: 1px solid#037682;
-        padding: 4px;
-    }
-    
-    .sell-on-vinted {
-        border:1px solid#017682;
-        background-color: #017682;
-        padding: 4px;
-        color: white;
-    }
-        
-    .help {
+
+    .l-header_actions {
         visibility: hidden;
     }
     
+    .l-header_navigation {
+        visibility: hidden;
+    }
 }
+
+
+
+/* -----------------
+ *   Desktop First
+ *-----------------*/
